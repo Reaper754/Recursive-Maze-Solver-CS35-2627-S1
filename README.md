@@ -22,6 +22,12 @@ The maze uses the following values:
 
 Your recursive algorithm should explore one position at a time. Each valid position should be marked as visited before the algorithm recursively explores the neighbouring positions.
 
+Here is a representation of the maze algorithm as a flowchart:
+
+[![Depth first search solve algorithm](/assets/solve.png)](https://smugpumpkins.github.io/learn-cs/index.html#/demo/cse3310/depth-first-search)
+
+[Step through simulation can be found here.](https://smugpumpkins.github.io/learn-cs/index.html#/demo/cse3310/depth-first-search)
+
 ## Basic File Structure
 
 Your starter folder will contain:
