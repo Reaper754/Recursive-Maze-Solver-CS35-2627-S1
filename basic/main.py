@@ -25,10 +25,25 @@ maze = [
 start = (1, 1)
 goal = (19, 19)
 
+wall = 1
+space = 0
+visited = 2
 def solve(current: tuple) -> bool:
     """Checks to see if a maze is solvable using depth-first-search.
 
     :param current: The current position being checked in the form (row, col)
     :return: The status of if the maze has been solved.
     """
-    pass
+    row = current[0]
+    col = current[1]
+    #Check to make sure it's inside the array
+    if row < 0 or row > len(maze):
+        return False
+    if row == 1:
+        return True
+    if 
+
+
+
+
+solve(1, 1)
