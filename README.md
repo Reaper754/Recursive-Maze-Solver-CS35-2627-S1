@@ -115,7 +115,7 @@ The exact symbols and formatting are your choice as long as the route is clear.
 The direction output could look similar to:
 
 ```text
-Directions: S S S E E N N E E S S
+Directions: S S S E E N E E S
 ```
 
 Each direction should represent one movement between two neighbouring positions on the successful path.
