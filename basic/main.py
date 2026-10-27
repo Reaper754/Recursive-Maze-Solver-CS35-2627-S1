@@ -1,3 +1,5 @@
+import sys
+
 maze = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
@@ -39,11 +41,29 @@ def solve(current: tuple) -> bool:
     #Check to make sure it's inside the array
     if row < 0 or row > len(maze):
         return False
-    if row == 1:
+    #Check if it's a wall
+    if (row, col) == wall:
+        return False
+    #Check if it's already visited
+    if (row, col) == visited:
+        return False
+    #Check if it's the end
+    if (row, col) == goal:
         return True
-    if 
+    maze[row][col] = visited
+    check_up = solve((row-1, col))
+    if check_up == True:
+        return True
+    check_down = solve((row + 1, col))
+    if check_down == True:
+        return True
+    check_right = solve((row, col - 1))
+    if check_right == True:
+        return True
+    check_left = solve((row, col + 1))
+    if check_left == True:
+        return True
+    else:
+        return False
 
-
-
-
-solve(1, 1)
+solve(start)
