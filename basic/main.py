@@ -1,6 +1,6 @@
 import sys
 
-sys.setrecursionlimit(500000000)
+sys.setrecursionlimit(5000000)
 
 maze = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
